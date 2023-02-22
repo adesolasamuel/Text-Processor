@@ -9,5 +9,6 @@ int main(){
 
     TextProcessor processor;
     processor.AppTitle();
+    processor.AppInfo();
 
 }

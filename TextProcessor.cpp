@@ -8,3 +8,7 @@
 void TextProcessor::AppTitle() {
     std::cout << "WELCOME TO TEST PROCESSOR\n";
 }
+
+void TextProcessor::AppInfo() {
+    std::cout << "Kindly Update the App Info\n";
+}
