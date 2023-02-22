@@ -12,6 +12,7 @@ private:
 
 public:
     void AppTitle();
+    void AppInfo();
 
 };
 
