@@ -1,6 +1,6 @@
 //
-// Created by samuel on 2/22/23.
-//
+// 
+//Contributors: Samuel Adesola, Adoche Onaji
 
 #include <iostream>
 #include "TextProcessor.h"
