@@ -2,8 +2,7 @@
 // Created by samuel on 2/22/23.
 //
 
-#ifndef TEXT_PROCESSOR_TEXTPROCESSOR_H
-#define TEXT_PROCESSOR_TEXTPROCESSOR_H
+#pragma once
 
 
 class TextProcessor {
@@ -17,4 +16,4 @@ public:
 };
 
 
-#endif //TEXT_PROCESSOR_TEXTPROCESSOR_H
+
