@@ -9,9 +9,15 @@
 class TextProcessor {
 
 private:
+    int option;
 
 public:
-    void AppTitle();
+    std::string filePath;   //File Path to the text file
+    std::string words;      //A string to hold the output, Check TextProcessor.cpp to how it was used
+
+    int getOption(){return option;};       //An Inline function returning the value in option
+    void priliminary();
+    void makeAllCaps();
     void AppInfo();
 
 };

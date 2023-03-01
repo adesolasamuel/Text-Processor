@@ -8,4 +8,5 @@ include_directories(.)
 add_executable(Text_Processor
         main.cpp
         TextProcessor.cpp
-        TextProcessor.h)
+        TextProcessor.h
+        Textfile.txt)

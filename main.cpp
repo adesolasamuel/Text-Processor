@@ -8,7 +8,14 @@
 int main(){
 
     TextProcessor processor;
-    processor.AppTitle();
+    processor.priliminary();
+
+    if(processor.getOption() == 1){     // Test Input to determine function call
+        processor.makeAllCaps();
+    }
+
+
+
     processor.AppInfo();
 
 }
