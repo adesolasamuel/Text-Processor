@@ -47,8 +47,8 @@ void TextProcessor::AppInfo() {
 }
 
 void TextProcessor::makeAllSmall() {
-	//std::cout << "Enter path to text file: ";
-	//std::cin >> filePath;
+	std::cout << "Enter path to text file: ";
+	std::cin >> filePath;
 	std::cout << "Enter file name to save it into.ENSURE TO ADD THE EXTENSION:  ";
 	std::cin >> filename;
 	std::ifstream file;
@@ -56,14 +56,14 @@ void TextProcessor::makeAllSmall() {
 	file.open(filePath, std::ios::in);
 	if (file.is_open()) {
 		while (!file.eof()) {
-			std::ofstream fs{ filename,  std::ios::app};
-			std::getline(file,words);
-			
+			std::ofstream fs{ filename,  std::ios::app };
+			std::getline(file, words);
+
 			std::transform(std::begin(words), std::end(words), std::begin(words), ::tolower);   //Convert to lowercase using Transform from the algorithm header
-			fs << words<<std::endl;
+			fs << words << std::endl;
 			fs.close();
-			
-			
+
+
 
 
 		}

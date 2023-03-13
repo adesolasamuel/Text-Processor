@@ -13,8 +13,8 @@ int main() {
 	if (processor.getOption() == 1) {     // Test Input to determine function call
 		processor.makeAllCaps();
 	}
-	if (processor.getOption() == 2) {
-		processor.makeAllSmall();    // Calls the function for lowercase
+	if (processor.getOption() == 2) {   // Test Input to determine function call
+		processor.makeAllSmall();
 	}
 
 

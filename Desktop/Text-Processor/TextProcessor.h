@@ -11,7 +11,7 @@ private:
 	int option;
 
 public:
-	std::string filePath ="Textfile.txt";   //File Path to the text file
+	std::string filePath ;   //File Path to the text file
 	std::string words;      //A string to hold the output, Check TextProcessor.cpp to how it was used
 	std::string filename;
 	
