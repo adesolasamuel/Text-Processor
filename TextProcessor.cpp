@@ -43,8 +43,8 @@ void TextProcessor::AppInfo() {
 
 
 void TextProcessor::makeAllSmall() {
-	//std::cout << "Enter path to text file: ";
-	//std::cin >> filePath;
+	std::cout << "Enter path to text file: ";
+	std::cin >> filePath;
 	std::cout << "Enter file name to save it into.ENSURE TO ADD THE EXTENSION:  ";
 	std::cin >> filename;
 	std::ifstream file;
