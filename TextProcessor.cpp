@@ -6,6 +6,7 @@
 #include <algorithm>
 #include "TextProcessor.h"
 #include "fstream"
+#include <string>
 
 void TextProcessor::priliminary() {
     std::cout << "WELCOME TO TEST PROCESSOR\n";
@@ -38,4 +39,34 @@ void TextProcessor::makeAllCaps() {
 
 void TextProcessor::AppInfo() {
     std::cout << "Kindly Update the App Info\n";
+}
+
+
+void TextProcessor::makeAllSmall() {
+	//std::cout << "Enter path to text file: ";
+	//std::cin >> filePath;
+	std::cout << "Enter file name to save it into.ENSURE TO ADD THE EXTENSION:  ";
+	std::cin >> filename;
+	std::ifstream file;
+
+	file.open(filePath, std::ios::in);
+	if (file.is_open()) {
+		while (!file.eof()) {
+			std::ofstream fs{ filename,  std::ios::app};
+			std::getline(file,words);
+			
+			std::transform(std::begin(words), std::end(words), std::begin(words), ::tolower);   //Convert to lowercase using Transform from the algorithm header
+			fs << words<<std::endl;
+			fs.close();
+			
+			
+
+
+		}
+		std::cout << "FILE SUCCESSFULLY SAVED" << std::endl;
+
+	}
+	else {
+		std::cout << "Could not read Text File\n";
+	}
 }
