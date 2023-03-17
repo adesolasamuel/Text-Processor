@@ -13,7 +13,7 @@ private:
 public:
     std::string filePath;   //File Path to the text file
     std::string words;      //A string to hold the output, Check TextProcessor.cpp to how it was used
-    std::string filename
+    std::string filename;
 
     int getOption(){return option;};       //An Inline function returning the value in option
     void priliminary();
