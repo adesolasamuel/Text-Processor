@@ -22,7 +22,6 @@ void TextProcessor::priliminary() {
 	std::cin >> option;
 
 }
-
 void TextProcessor::makeAllCaps() {
 	std::cout << "Enter path to text file: ";
 	std::cin >> filePath;
