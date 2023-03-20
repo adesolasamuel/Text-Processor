@@ -3,7 +3,8 @@ Building a simple text file processor. The app will be able to perform various p
 1. Counting the number of words in the file
 2. Counting the number of letters
 3. converting the text file into upper case
-4. etc
+4. Converting the text file into lower case
+5.etc
 
 # Getting Involved
 
