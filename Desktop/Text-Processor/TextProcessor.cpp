@@ -26,13 +26,20 @@ void TextProcessor::priliminary() {
 void TextProcessor::makeAllCaps() {
 	std::cout << "Enter path to text file: ";
 	std::cin >> filePath;
+	std::cout << "Enter file name to save it into.ENSURE TO ADD THE EXTENSION:  ";
+	std::cin >> filename;
 	std::fstream file;
 	file.open(filePath, std::ios::in);
 	if (file.is_open()) {
-		while (file >> words) {
+		while (!file.eof()) {
+			std::ofstream f{ filename,  std::ios::app };
+			std::getline(file, words);
+
 			std::transform(std::begin(words), std::end(words), std::begin(words), ::toupper);   //Convert to uppercase using Transform from the algorithm header
-			std::cout << words << std::endl;
+			f << words << std::endl;
+			f.close();
 		}
+		std::cout << "FILE SUCCESSFULLY SAVED" << std::endl;
 	}
 	else {
 		std::cout << "Could not read Text File\n";
